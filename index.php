@@ -18,8 +18,11 @@ greeting();
 </head>
 
 <body>
-
-
+    <!--Add Form elements--> 
+    <form method="get" action="index.php">
+    <input type="text" id="name" name="name">
+    <input type="submit" value="submit"> 
+    </form> 
 </body>
 
 </html>
