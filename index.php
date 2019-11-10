@@ -1,8 +1,15 @@
 <?php
-
-function greeting(){
+//Check if $_GET is set to avoid error
+if(isset($_GET['name'])){
     $name = $_GET['name'];
-    echo "Hello" . $name;  
+}
+
+//Echo $name value if $_GET is set
+function greeting(){
+    if(isset($_GET['name'])){
+    $name = $_GET['name'];
+     echo "Hello" . $name;  
+    }
 }
 greeting();
 
